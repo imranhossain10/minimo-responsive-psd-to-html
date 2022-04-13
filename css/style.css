@@ -1,0 +1,116 @@
+/* include fonts start  */
+@font-face {
+    font-family: PlayfairDisplay-Regular;
+    src: url(../web-fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Italic;
+    src: url(../web-fonts/Playfair_Display/PlayfairDisplay-Italic.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Black;
+    src: url(../web-fonts/Playfair_Display/PlayfairDisplay-Black.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url(../web-fonts/Playfair_Display/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(../web-fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+/* include fonts end  */
+/* set roots start  */
+:root {
+    --primary: #626262;
+    --light: #b4ad9e;
+    --bg-light: #f0f0f0;
+}
+
+/* set roots end  */
+/* body inheritence start */
+body {
+    font-family: PlayfairDisplay-Regular;
+    color: var(--primary);
+}
+
+/* body inheritence end */
+/* header start  */
+.navbar-light .navbar-nav .nav-link {
+    color: var(--primary);
+    border: 1px solid transparent;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 1px solid var(--primary);
+}
+/* header end  */
+
+/* getway start  */
+.tags {
+    font-family: Ubuntu-Light;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--light);
+}
+.title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: PlayfairDisplay-Regular;
+    font-weight: 400;
+    font-size: 30px;
+}
+/* getway end  */
+/* blog start  */
+.blog button[type=button]{
+    font-family: PlayfairDisplay-Regular;
+    font-weight: 400;
+    font-size: 20px;
+    transition: .7s;
+}
+/* blog end  */
+/* newslatter start  */
+.newslatter{
+    background-color: var(--bg-light);
+}
+.newslatter h1{
+    color: #333333;
+}
+.newslatter .news-input{
+    background: var(--bg-light);
+    border: navajowhite;
+    border-bottom: 1px solid var(--primary);
+    border-radius: 0;
+    padding-right:40px;
+    padding-bottom:10px;
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.newslatter span[type=button]{
+    background: var(--bg-light);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+}
+/* newslatter end  */
+/* footer start  */
+footer{
+    background: var(--bg-light);
+    padding: 30px 0;
+}
+footer .f-link{
+    text-decoration: none;
+    color: var(--primary);
+    padding-right: 10px;
+}
+/* footer end  */
